@@ -1,19 +1,19 @@
-const btnNao = document.getElementById("nao");
 const btnSim = document.getElementById("sim");
+const btnNao = document.getElementById("nao");
 const resposta = document.getElementById("resposta");
 
-btnNao.addEventListener("mouseover", () => {
-    const largura = window.innerWidth - btnNao.offsetWidth;
-    const altura = window.innerHeight - btnNao.offsetHeight;
+btnSim.addEventListener("mouseover", () => {
+    const largura = window.innerWidth - btnSim.offsetWidth;
+    const altura = window.innerHeight - btnSim.offsetHeight;
 
     const x = Math.random() * largura;
     const y = Math.random() * altura;
 
-    btnNao.style.position = "absolute";
-    btnNao.style.left = `${x}px`;
-    btnNao.style.top = `${y}px`;
+    btnSim.style.position = "absolute";
+    btnSim.style.left = `${x}px`;
+    btnSim.style.top = `${y}px`;
 });
 
-btnSim.addEventListener("click", () => {
-    resposta.innerHTML = "❤️ Boa Resposta! ❤️";
+btnNao.addEventListener("click", () => {
+    resposta.innerHTML = "BOA LIS";
 });
